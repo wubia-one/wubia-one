@@ -8,7 +8,7 @@ import { SITE_URL } from "./src/data/config";
 // https://astro.build/config
 export default defineConfig({
   integrations: [tailwind(), sitemap(), robotsTxt()],
-  site: 'wubia-one.github.io',
+  site: 'https://wubia-one.github.io',
   base: 'wubia-one',
   markdown: {
     syntaxHighlight: "shiki",
