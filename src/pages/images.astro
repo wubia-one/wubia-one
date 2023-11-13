@@ -18,9 +18,11 @@ import postimages from "@/data/postimages"
 <Layout>
     <div class="rid grid-flow-row auto-rows-max space-y-4">
         <section class="flex flex-col gap-4">
-            {postimages.map((image) => (
+            <div>
+              {postimages.slice(0, 10).map((image) => (
                 <img src={image.path} alt="" />
-              ))};
-    
+              ))}
+            </div>    
+        </section>        
     </div>
 </Layout>
