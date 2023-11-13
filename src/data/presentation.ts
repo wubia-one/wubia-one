@@ -15,7 +15,7 @@ type Presentation = {
 };
 
 const presentation: Presentation = {
-  mail: "email@example.com",
+  mail: "k3vlphd@gmail.com",
   title: "Hi, I’m wubia",
   profile: "/wubia-one/portrait.webp",
   description:
