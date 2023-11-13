@@ -4,41 +4,41 @@
 
 
 .post p {
-  @apply leading-7;
+  @layer leading-7;
 }
 
 .post code {
-  @apply rounded-sm bg-base-100 px-1 py-[2px] text-orange-500;
+  @layer font-CaskaydiaCove-NFM rounded-sm bg-base-100 px-1 py-[2px] text-orange-500;
 }
 
 .post h2 {
-  @apply mt-6 text-3xl base-content;
+  @layer mt-6 text-3xl base-content;
 }
 
 .post h3 {
-  @apply mt-4 text-xl base-content;
+  @layer mt-4 text-xl base-content;
 }
 
 .post code {
-  @apply rounded-sm bg-base-100 px-1 py-[2px] text-red-500;
+  @layer rounded-sm bg-base-100 px-1 py-[2px] text-red-500;
 }
 
 .post a {
-  @apply base-content underline;
+  @layer base-content underline;
 }
 
 .post ul {
-  @apply list-disc;
+  @layer list-disc;
 }
 
 .post blockquote {
-  @apply flex flex-row gap-2 before:block before:h-auto before:w-1 before:max-w-[1px] before:bg-red-400 before:content-[''];
+  @layer flex flex-row gap-2 before:block before:h-auto before:w-1 before:max-w-[1px] before:bg-red-400 before:content-[''];
 }
 
 .post pre {
-  @apply p-4;
+  @layer p-4;
 }
 
 .post pre > code {
-  @apply bg-transparent;
+  @layer bg-transparent;
 }
