@@ -15,11 +15,11 @@ const headTags = Astro.props;
 ---
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="black" data-theme="black">
   <SEOTags {...headTags} />
 
   <body
-    class="mx-auto flex min-h-screen max-w-[872px] flex-col gap-9 bg-neutral-950 px-10 py-8 text-sm text-neutral-400 md:gap-20 md:py-16"
+    class="mx-auto flex min-h-screen max-w-[872px] flex-col gap-9 bg-base-100 px-10 py-8 text-sm base-content md:gap-20 md:py-16"
   >
     <Header />
     <BlurCircle position="top" color={theme.colors.blur.top} />
