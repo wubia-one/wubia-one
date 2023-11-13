@@ -28,7 +28,7 @@ const presentation: Presentation = {
     },
     {
       label: "Github",
-      link: "https://github.com7wubia-one",
+      link: "https://github.com/wubia-one",
     },
   ],
 };
