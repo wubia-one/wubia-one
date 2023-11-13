@@ -9,7 +9,7 @@ import { SITE_URL } from "./src/data/config";
 export default defineConfig({
   integrations: [tailwind(), sitemap(), robotsTxt()],
   site: 'https://wubia-one.github.io',
-  base: 'wubia-one',
+  base: '',
   markdown: {
     syntaxHighlight: "shiki",
     shikiConfig: {
