@@ -11,6 +11,9 @@ import convertAsteriskToStrongTag from "@/utils/convertAsteriskToStrongTag";
 
 import presentation from "@/data/presentation";
 import projects from "@/data/projects";
+import Cv from "./cv.astro";
+import CvCard from "@/components/CvCard.astro";
+import cv from "@/data/cv";
 
 const posts = (await getCollection("posts")).sort(function (first, second) {
   return second.data.publishedAt.getTime() - first.data.publishedAt.getTime();
@@ -84,9 +87,11 @@ const posts = (await getCollection("posts")).sort(function (first, second) {
         {
           projects.length !== 0 &&
             projects.map((project) => <ProjectCard {...project} />)
-        }
+        }: _Cv
       </section>
     </article>
+
+  
 
   </main>
 </Layout>
