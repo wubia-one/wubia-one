@@ -10,15 +10,6 @@ module.exports = {
       },
     },
   },
-  plugins: [require('daisyui')],
-  daisyui: {
-    themes: true,
-    darkTheme: 'class',
-    darkMode: 'class',
-    base: true,
-    styled: true,
-    utils: true,
-    rtl: false,
-    logs: false,
-  },
+  plugins: [],
+  
 };
