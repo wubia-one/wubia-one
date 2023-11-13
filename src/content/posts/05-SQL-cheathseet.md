@@ -1,7 +1,7 @@
 ---
 title: SQL (MySQL) Grundlagen
 publishedAt: 2023-11-12 
-description: fmnoasö
+description: A short prewiev of what SQL is campable.
 slug: "untitled 2"
 isPublish: true
 ---

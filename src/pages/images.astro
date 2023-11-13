@@ -1,0 +1,26 @@
+---
+import { getCollection } from "astro:content";
+import { Image } from "astro:assets"
+
+
+import Layout from "@/layouts/Layout.astro";
+import SocialLinks from "@/components/SocialLinks.astro";
+import Link from "@/components/shared/Link.astro";
+import convertAsteriskToStrongTag from "@/utils/convertAsteriskToStrongTag";
+
+import presentation from "@/data/presentation";
+
+import ProjectCard from "@/components/ProjectCard.astro";
+import postimages from "@/data/postimages"
+--- 
+
+
+<Layout>
+    <div class="rid grid-flow-row auto-rows-max space-y-4">
+        <section class="flex flex-col gap-4">
+            {postimages.map((image) => (
+                <img src={image.path} alt="" />
+              ))};
+    
+    </div>
+</Layout>

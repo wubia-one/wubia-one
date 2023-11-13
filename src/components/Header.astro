@@ -41,6 +41,16 @@ const pathname = removeTrailingSlash(Astro.url.pathname);
           }}>CV</a
         >
       </li>
+      <li>/</li>
+      <li>
+        <a
+          href="/wubia-one/images"
+          class:list={{
+            ["hover:text-neutral-100"]: true,
+            ["text-neutral-100"]: pathname === "/images",
+          }}>images</a
+        >
+      </li>
     </ul>
   </nav>
 </header>
