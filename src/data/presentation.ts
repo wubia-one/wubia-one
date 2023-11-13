@@ -1,3 +1,6 @@
+import portrait from "public/portrait.webp"
+
+
 type Social = {
   label: string;
   link: string;
@@ -14,7 +17,7 @@ type Presentation = {
 const presentation: Presentation = {
   mail: "email@example.com",
   title: "Hi, I’m wubia 👋",
-  profile: "/wubia-one/profile.webp",
+  profile: "/wubia-one/portrait.webp",
   description:
     "I am a Web Devloper who is currently based in Germany, Berlin.",
   socials: [
