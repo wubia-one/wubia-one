@@ -10,6 +10,24 @@ import convertAsteriskToStrongTag from "@/utils/convertAsteriskToStrongTag";
 ---
 
 <Layout>
+  <style>
+    .rating {
+        unicode-bidi: bidi-override;
+        text-align: center;
+    }
+  
+    .rating > span {
+        display: inline-block;
+        position: relative;
+        width: 1.1em;
+    }
+  
+    .rating > span:before {
+        content: "\2606";
+        position: absolute;
+    }
+  </style>
+  <main>
   <article
   class="flex flex-col gap-8 md:flex-row-reverse md:justify-end md:gap-12"
 >
@@ -136,3 +154,13 @@ import convertAsteriskToStrongTag from "@/utils/convertAsteriskToStrongTag";
  
 
 </Layout>
+
+
+
+<!--div>
+<div x-data="{ rating: 3 }">
+<div class="rating">
+        <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+        <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+    </div>
+</div!-->

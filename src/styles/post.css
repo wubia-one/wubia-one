@@ -1,44 +1,38 @@
 /* Beispiel für einen korrekten Dateipfad */
-@import url('./global.css');
+/*@import url('./global.css');*/
 
 
 
 .post p {
-  @layer leading-7;
+  @layer p;
 }
 
 .post code {
-  @layer font-CaskaydiaCove-NFM rounded-sm bg-base-100 px-1 py-[2px] text-orange-500;
+  @layer mockup-code /*font-CaskaydiaCove-NFM */ bg-base-100;
 }
 
 .post h2 {
-  @layer mt-6 text-3xl base-content;
+  @layer h2;
 }
 
 .post h3 {
-  @layer mt-4 text-xl base-content;
+  @layer h3;
 }
 
-.post code {
-  @layer mockup-code rounded-sm bg-base-100 px-1 py-[2px] text-red-500;
-}
+
 
 .post a {
-  @layer base-content underline;
+  @layer a;
 }
 
 .post ul {
-  @layer list-disc;
+  @layer ul;
 }
 
 .post blockquote {
-  @layer flex flex-row gap-2 before:block before:h-auto before:w-1 before:max-w-[1px] before:bg-red-400 before:content-[''];
+  @layer mockup-code;
 }
 
 .post pre {
-  @layer p-4;
-}
-
-.post pre > code {
-  @layer mockup-code bg-transparent;
+  @layer pre;
 }
