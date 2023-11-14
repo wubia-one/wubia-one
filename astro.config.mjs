@@ -8,7 +8,14 @@ import prefetch from "@astrojs/prefetch";
 // https://astro.build/config
 export default defineConfig({
   integrations: [tailwind(), sitemap(), robotsTxt(),prefetch({
-    intentSelector: ["a[href^='/wubia-one']", "a[href^='/wubia-one/cv']", "a[href^='/wubia-one/posts']", "a[href^='/wubia-one/posts/Buisness']", "a[href^='/wubia-one/posts/Dotfiles']", "a[href^='/wubia-one/posts/untitled%202']", "a[href^='/wubia-one/posts/untitled']", "a[href^='/wubia-one/images']"
+    intentSelector: ["a[href^='/wubia-one']",
+                     "a[href^='/wubia-one/cv']",
+                     "a[href^='/wubia-one/posts']",
+                     "a[href^='/wubia-one/posts/Buisness']",
+                     "a[href^='/wubia-one/posts/Dotfiles']",
+                     "a[href^='/wubia-one/posts/untitled%202']",
+                     "a[href^='/wubia-one/posts/untitled']",
+                     "a[href^='/wubia-one/images']"
   ],
   })],
   site: 'https://wubia-one.github.io',
