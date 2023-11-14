@@ -1,5 +1,6 @@
 ---
 import Layout from "@/layouts/Layout.astro";
+import Link from "@/components/shared/Link.astro";
 import presentation from "@/data/presentation";
 ---
 
@@ -17,7 +18,11 @@ import presentation from "@/data/presentation";
 
       <div class="text-2xl py-2 font-bold">Kontakt:</div>
       <div class="text-lg py-1">
-        E-Mail: {presentation.mail}
+        E-Mail
+        <Link
+            href={`mailto:${presentation.mail}`}
+            label={presentation.mail}
+          /> 
       </div>
 
       <div class="text-2xl py-2 font-bold">Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV:</div>
