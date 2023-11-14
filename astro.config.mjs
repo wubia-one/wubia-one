@@ -10,6 +10,7 @@ export default defineConfig({
   integrations: [tailwind(), sitemap(), robotsTxt(),prefetch({
     intentSelector: ["a[href^='/wubia-one']",
                      "a[href^='/wubia-one/cv']",
+                     "a[href^='/wubia-one/impressum']",
                      "a[href^='/wubia-one/posts']",
                      "a[href^='/wubia-one/posts/Buisness']",
                      "a[href^='/wubia-one/posts/Dotfiles']",

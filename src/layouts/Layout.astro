@@ -6,6 +6,7 @@ import SEOTags from "@/components/seo/SEOTags.astro";
 import type { HeadTags } from "@/utils/types/HeadTags";
 import { ThemeSwitch } from "astro-color-scheme";
 import SocialLinks from "@/components/SocialLinks.astro";
+import Footer from "@/components/Footer.astro";
 import Link from "@/components/shared/Link.astro";
 
 import presentation from "@/data/presentation";
@@ -38,60 +39,6 @@ const headTags = Astro.props;
     </style>
   </body>
   <footer is:global>
-    <div>
-      <label class="font-bold">
-        Theme:
-        <ThemeSwitch strategy="select">
-          <select class=" select select-bordered select-accent select-md">
-            <option value="system">System</option>
-            <option value="dark">Dark</option>
-            <option value="light">Light</option>
-            <option value="cupcake">Cupcake</option>
-            <option value="bumblebee">Bumblebee</option>
-            <option value="emerald">Emerald</option>
-            <option value="corporate">Corporate</option>
-            <option value="synthwave">Synthwave</option>
-            <option value="retro">Retro</option>
-            <option value="cyberpunk">Cyberpunk</option>
-            <option value="valentine">Valentine</option>
-            <option value="halloween">Halloween</option>
-            <option value="garden">Garden</option>
-            <option value="forest">Forest</option>
-            <option value="aqua">Aqua</option>
-            <option value="lofi">Lofi</option>
-            <option value="pastel">Pastel</option>
-            <option value="fantasy">Fantasy</option>
-            <option value="wireframe">Wireframe</option>
-            <option value="black">Black</option>
-            <option value="luxury">Luxury</option>
-            <option value="dracula">Dracula</option>
-            <option value="cmyk">CMYK</option>
-            <option value="autumn">Autumn</option>
-            <option value="business">Business</option>
-            <option value="acid">Acid</option>
-            <option value="lemonade">Lemonade</option>
-            <option value="night">Night</option>
-            <option value="coffee">Coffee</option>
-            <option value="winter">Winter</option>
-          </select>
-        </ThemeSwitch>
-      </label>        
-      </div>
-      <br/>
-      <br/> 
-
-      <div class="flex flex-col gap-8">
-        <header class="flex w-full flex-row justify-between gap-2">
-          <h3 class="text-lg base-content">Get in touch</h3>
-        </header>
-        <p>
-          Email me at <Link
-            href={`mailto:${presentation.mail}`}
-            label={presentation.mail}
-          /> or follow me via my social links.
-        </p>
-  
-        <SocialLinks />
-      </div>
+        <Footer />
   </footer>
 </html>
