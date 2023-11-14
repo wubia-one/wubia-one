@@ -8,7 +8,7 @@
 }
 
 .post code {
-  @layer font-CaskaydiaCove-NFM rounded-sm bg-base-100 px-1 py-[2px] text-orange-500;
+  @layer font-CaskaydiaCove-NFM rounded-sm bg-base-100;
 }
 
 .post h2 {
@@ -20,7 +20,7 @@
 }
 
 .post code {
-  @layer mockup-code rounded-sm bg-base-100 px-1 py-[2px] text-red-500;
+  @layer mockup-code rounded-sm bg-base-100;
 }
 
 .post a {
@@ -37,8 +37,4 @@
 
 .post pre {
   @layer p-4;
-}
-
-.post pre > code {
-  @layer mockup-code bg-transparent;
 }
