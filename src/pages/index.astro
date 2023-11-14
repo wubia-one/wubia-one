@@ -34,6 +34,7 @@ const posts = (await getCollection("posts")).sort(function (first, second) {
           />
         )
       }
+      
 
       <div class="flex flex-col gap-8">
         <h1 class="text-3xl base-content">
@@ -70,9 +71,12 @@ const posts = (await getCollection("posts")).sort(function (first, second) {
                 />
               ))
         }
-      </section>
-    </article>
+       
 
+      </section>
+      <hr>
+    </article>
+    
     <article class="flex flex-col gap-8">
       <header class="flex w-full flex-row justify-between gap-2">
         <h3 class="text-lg base-content">
@@ -85,7 +89,7 @@ const posts = (await getCollection("posts")).sort(function (first, second) {
         {
           projects.length !== 0 &&
             projects.map((project) => <ProjectCard {...project} />)
-        }
+        }<hr>
       </section>
     </article>
 

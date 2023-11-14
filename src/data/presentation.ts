@@ -19,7 +19,7 @@ const presentation: Presentation = {
   title: "Hi, I’m wubia",
   profile: "/wubia-one/portrait.webp",
   description:
-    "I am a Web Devloper who is currently based in Germany, Berlin.",
+    "I am a Web Devloper who is currently based in Germany, Berlin, and I am currently absolving a 3 year apprenticeship",
   socials: [
     {
       label: "X",
