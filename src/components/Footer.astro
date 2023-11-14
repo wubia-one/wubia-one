@@ -16,22 +16,21 @@ const pathname = removeTrailingSlash(Astro.url.pathname);
 
     <a href="/wubia-one/" class="font-bold">&copy; {today.getFullYear()}  wubia</a>
       <div class="flex flex-col gap-8">
+        <ul role="list" class="flex flex-row gap-2">
+            <SiteLinks />
+            <li>/</li>
+            <li>
+              <a
+                href="/wubia-one/impressum"
+                class:list={{
+                  ["hover:text-neutral-100"]: true,
+                  ["text-neutral-100"]: pathname === "/impressum",
+                }}>impressum</a
+              >
+            </li>
+            <li>/</li>
+            <SocialLinks />
+          </ul>
         
-       
-  
-        <SocialLinks />
-    </p>
-    <ul role="list" class="flex flex-row gap-2">
-        <SiteLinks />
-        <li>/</li>
-        <li>
-          <a
-            href="/wubia-one/impressum"
-            class:list={{
-              ["hover:text-neutral-100"]: true,
-              ["text-neutral-100"]: pathname === "/impressum",
-            }}>impressum</a
-          >
-        </li>
-      </ul>
+      </p>
 </main>
