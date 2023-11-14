@@ -22,7 +22,7 @@
 
 
 .post a {
-  @layer a
+  @layer a;
 }
 
 .post ul {
