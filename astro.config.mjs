@@ -5,7 +5,6 @@ import robotsTxt from "astro-robots-txt";
 import { SITE_URL } from "./src/data/config";
 
 import prefetch from "@astrojs/prefetch";
-
 // https://astro.build/config
 export default defineConfig({
   integrations: [tailwind(), sitemap(), robotsTxt(),prefetch({
