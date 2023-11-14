@@ -12,29 +12,9 @@ const pathname = removeTrailingSlash(Astro.url.pathname);
 ---
   <main>
       <div class="flex flex-col gap-8">
-        <header class="flex w-full flex-row justify-between gap-2">
-          <h3 class="text-lg base-content">Get in touch</h3>
-        </header>
-        <p>
-          Email me at <Link
-            href={`mailto:${presentation.mail}`}
-            label={presentation.mail}
-          /> or follow me via my social links.
-        </p>
+        
+       
   
         <SocialLinks />
-</p>
-<ul role="list" class="flex flex-row gap-2">
-    <SiteLinks />
-    <li>/</li>
-    <li>
-      <a
-        href="/wubia-one/impressum"
-        class:list={{
-          ["hover:text-neutral-100"]: true,
-          ["text-neutral-100"]: pathname === "/impressum",
-        }}>impressum</a
-      >
-    </li>
-  </ul>
+
 </main>
