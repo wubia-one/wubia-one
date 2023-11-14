@@ -4,7 +4,7 @@ type Postimage = {
   
   const postimages: Postimage[] = [
      
-    { path: "/wubia-one//blue/stock-1.jpg" },
+    { path: "/wubia-one/blue/stock-1.jpg" },
     { path: "/wubia-one/blue/stock-2.jpg" },
     { path: "/wubia-one/blue/stock-3.jpg" },
     { path: "/wubia-one/blue/stock-4.jpg" },

@@ -1,7 +1,7 @@
 ---
-title: Git - Dotfiles
+title: "Git - Dotfiles"
 publishedAt: 2023-11-12 
-description: fmnoasö
+description: "https://github.com/wubia-one/Dotfiles"
 slug: "Dotfiles"
 isPublish: true
 ---

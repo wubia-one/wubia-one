@@ -1,7 +1,18 @@
 /*
 ! tailwindcss v3.3.5 | MIT License | https://tailwindcss.com
 */
+a:hover{
+  color:blue;
+}
+table {
+  border-collapse: collapse; /* Merge cell borders */
+  width: 100%; /* Make the table span the entire width */
+}
 
+th, td {
+  border: 1px solid black; /* Add borders to table cells */
+  padding: 8px; /* Add padding to table cells */
+}
 /*
 1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
 2. Allow adding a border to an element by just adding a border-width. (https://github.com/tailwindcss/tailwindcss/pull/116)
