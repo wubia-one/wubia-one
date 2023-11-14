@@ -6,18 +6,17 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["Open Sans", ...defaultTheme.fontFamily.sans],
         'CaskaydiaCove-NFM': [
           '/wuvia-one/CaskaydiaCoveNerdFontMono-Regular.ttf',
-          'monospace',
+         ...defaultTheme.fontFamily.monospace,
         ],
         'CaskaydiaCove-NF': [
           '/wubia-one/CaskaydiaCoveNerdFont-Regular.ttf',
-          'serif',
+          ...defaultTheme.fontFamily.serif,
         ],
         'CaskaydiaCove-NFP': [
           '/wubia-one/CaskaydiaCoveNerdFontPropo-Regular.ttf',
-          'sans-serif',
+         ...defaultTheme.fontFamily.sans,
         ],
       },
     },
