@@ -5,16 +5,32 @@ import SocialLinks from "@/components/SocialLinks.astro";
 import SiteLinks from "@/components/SiteLinks.astro";
 import { ThemeSwitch } from "astro-color-scheme";
 
-import Link from "@/components/shared/Link.astro";
+import Link from "@/components/shared/Link.astro"
+
+const today = new Date();;
 
 
 const pathname = removeTrailingSlash(Astro.url.pathname);
 ---
   <main>
-      <div class="flex flex-col gap-8">
-        
-       
-  
-        <SocialLinks />
 
+    <a href="/wubia-one/" class="font-bold">&copy; {today.getFullYear()}  wubia</a>
+      <div class="flex flex-col gap-8">
+        <ul role="list" class="flex flex-row gap-2">
+            <SiteLinks />
+            <li>/</li>
+            <li>
+              <a
+                href="/wubia-one/impressum"
+                class:list={{
+                  ["hover:text-neutral-100"]: true,
+                  ["text-neutral-100"]: pathname === "/impressum",
+                }}>impressum</a
+              >
+            </li>
+            <li>/</li>
+            <SocialLinks />
+          </ul>
+        
+      </p>
 </main>
