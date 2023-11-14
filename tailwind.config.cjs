@@ -12,13 +12,13 @@ module.exports = {
   ...defaultTheme.fontFamily.monospace,
         ],
         'CaskaydiaCove-NF': [
-          '/wubia-one/CaskaydiaCoveNerdFont-Regular.ttf',
-          ...defaultTheme.fontFamily.serif,
-        ],
-        'CaskaydiaCove-NFP': [
-          '/wubia-one/CaskaydiaCoveNerdFontPropo-Regular.ttf',
-         ...defaultTheme.fontFamily.sans,
-        ],
+  '/wubia-one/CaskaydiaCoveNerdFont-Regular.ttf',
+  ...defaultTheme.fontFamily.serif,
+],
+'CaskaydiaCove-NFP': [
+  '/wubia-one/CaskaydiaCoveNerdFontPropo-Regular.ttf',
+  ...defaultTheme.fontFamily.sans,
+],
       },
     },
   },
