@@ -4,31 +4,29 @@
 
 
 .post p {
-  @layer leading-7;
+  @layer p;
 }
 
 .post code {
-  @layer font-CaskaydiaCove-NFM rounded-sm bg-base-100;
+  @layer mockup-code font-CaskaydiaCove-NFM bg-base-100;
 }
 
 .post h2 {
-  @layer mt-6 text-3xl base-content;
+  @layer h2;
 }
 
 .post h3 {
-  @layer mt-4 text-xl base-content;
+  @layer h3;
 }
 
-.post code {
-  @layer mockup-code rounded-sm bg-base-100;
-}
+
 
 .post a {
-  @layer base-content underline;
+  @layer a
 }
 
 .post ul {
-  @layer list-disc;
+  @layer ul;
 }
 
 .post blockquote {
@@ -36,5 +34,5 @@
 }
 
 .post pre {
-  @layer p-4;
+  @layer pre;
 }
