@@ -20,7 +20,7 @@
 }
 
 .post code {
-  @layer rounded-sm bg-base-100 px-1 py-[2px] text-red-500;
+  @layer mockup-code rounded-sm bg-base-100 px-1 py-[2px] text-red-500;
 }
 
 .post a {
@@ -40,5 +40,5 @@
 }
 
 .post pre > code {
-  @layer bg-transparent;
+  @layer mockup-code bg-transparent;
 }
