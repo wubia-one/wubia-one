@@ -1,5 +1,5 @@
 /* Beispiel für einen korrekten Dateipfad */
-@import url('./global.css');
+/*@import url('./global.css');*/
 
 
 
@@ -8,7 +8,7 @@
 }
 
 .post code {
-  @layer mockup-code font-CaskaydiaCove-NFM bg-base-100;
+  @layer mockup-code /*font-CaskaydiaCove-NFM */bg-base-100;
 }
 
 .post h2 {
