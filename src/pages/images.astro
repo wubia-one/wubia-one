@@ -1,16 +1,9 @@
 ---
-import { getCollection } from "astro:content";
-import { Image } from "astro:assets"
 
 
 import Layout from "@/layouts/Layout.astro";
-import SocialLinks from "@/components/SocialLinks.astro";
-import Link from "@/components/shared/Link.astro";
-import convertAsteriskToStrongTag from "@/utils/convertAsteriskToStrongTag";
 
-import presentation from "@/data/presentation";
 
-import ProjectCard from "@/components/ProjectCard.astro";
 import postimages from "@/data/postimages"
 --- 
 
@@ -21,10 +14,10 @@ import postimages from "@/data/postimages"
      
        <section class="">
                
-      
+     
             <div class="grid grid-rows-8 grid-cols-4 gap-4">
               {postimages.slice(0,100).map((image) => (
-                <div><a href={image.path} style=""><img src={image.path}alt="" /></a></div>
+                <div><a href={image.path} style=""><img src={image.path} alt="" /></a></div>
               ))}
             </div>    
          
