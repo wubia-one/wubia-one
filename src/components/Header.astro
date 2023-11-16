@@ -10,7 +10,7 @@ const pathname = removeTrailingSlash(Astro.url.pathname);
 <header class="z-40 flex w-full flex-col gap-2 md:flex-row md:justify-between">
   <label class="font-bold">
     Theme:
-    <ThemeSwitch strategy="select">
+    <ThemeSwitch strategy="select" defaultTheme="black">
       <select class=" select select-bordered select-accent select-md">
         <option value="system">System</option>
         <option value="black" selected>Black</option>
