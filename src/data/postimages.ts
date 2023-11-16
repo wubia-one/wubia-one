@@ -1,33 +1,29 @@
 import axios from 'axios';
-import * as cheerio from 'cheerio';
-
 
 type Postimage = {
   path: string;
 };
 
-
 const postimages: Postimage[] = [];
 
 async function getImgUrls(tags: string, totalPages: number): Promise<string[]> {
   try {
-    const baseUrl = 'https://danbooru.donmai.us/posts';
-
     // Array to store all image URLs across pages
     const allImgUrls: string[] = [];
 
     // Loop through multiple pages
     for (let page = 1; page <= totalPages; page++) {
-      const response = await axios.get(`${baseUrl}?tags=${tags}&page=${page}`);
-      const $ = cheerio.load(response.data);
+      const response = await axios.get(`https://danbooru.donmai.us/posts.json?tags=${tags}&page=${page}`);
+      const posts = response.data;
 
       // Array to store image URLs on the current page
       const imgUrls: string[] = [];
-      $('img').each((index, element) => {
-        const imgUrl = $(element).attr('src');
+      
+      // Extract image URLs from the JSON response
+      posts.forEach((post: any) => {
+        const imgUrl = post.large_file_url;
         if (imgUrl) {
           imgUrls.push(imgUrl);
-        
 
           // Create a Postimage object and push it to the postimages array
           postimages.push({ path: imgUrl });
@@ -40,7 +36,7 @@ async function getImgUrls(tags: string, totalPages: number): Promise<string[]> {
 
     return allImgUrls;
   } catch (error) {
-    console.error('Error:');
+    console.error('Error:', error.message);
     return [];
   }
 }
@@ -57,7 +53,4 @@ getImgUrls(specifiedTags, totalPages)
     console.error('Error:', error.message);
   });
 
-
-  
-  export default postimages;
-  
+export default postimages;
