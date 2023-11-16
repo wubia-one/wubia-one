@@ -41,8 +41,8 @@ async function getImgUrls(tags: string, totalPages: number): Promise<string[]> {
   }
 }
 
-let specifiedTags = 'le_malin_(azur_lane)';
-const totalPages = 1000000; // Replace with the number of pages you want to scrape
+let specifiedTags = '';
+const totalPages = 1000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000; // Replace with the number of pages you want to scrape
 
 getImgUrls(specifiedTags, totalPages)
   .then((imgUrls) => {
