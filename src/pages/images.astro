@@ -1,6 +1,6 @@
 ---
 import Layout from "@/layouts/Layout.astro";
-import postimages from "@/data/postimages";
+import { postimages } from "@/data/postimages";
 ---
 
 <Layout>
@@ -18,7 +18,9 @@ import postimages from "@/data/postimages";
       </div>
 
       <div class="grid grid-rows-8 grid-cols-4 gap-4">
-        {filteredImages.map((image, index) => (
+        {postimages && postimages.filter((image) =>
+          image.path.toLowerCase().includes(tagSearch)
+        ).map((image, index) => (
           <div key={index}>
             <a href={image.path} style="text-decoration: none;">
               <img src={image.path} alt="" style="max-width: 100%; height: auto;" />
@@ -35,9 +37,5 @@ import postimages from "@/data/postimages";
     const handleTagSearch = (event) => {
       tagSearch = event.target.value.toLowerCase();
     };
-
-    const filteredImages = postimages.filter((image) =>
-      image.path.toLowerCase().includes(tagSearch)
-    );
   </script>
 </Layout>
