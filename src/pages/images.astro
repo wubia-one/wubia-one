@@ -1,27 +1,20 @@
 ---
-
-
 import Layout from "@/layouts/Layout.astro";
-
-
-import postimages from "@/data/postimages"
---- 
-
+import postimages from "@/data/postimages";
+---
 
 <Layout>
-    <div>
-   
-     
-       <section class="">
-               
-     
-            <div class="grid grid-rows-8 grid-cols-4 gap-4">
-              {postimages.map((image) => (
-                <div><a href={image.path} style=""><img src={image.path} alt="" /></a></div>
-              ))}
-            </div>    
-         
-        </section>
-      
-    </div>
+  <div>
+    <section class="">
+      <div class="grid grid-rows-8 grid-cols-4 gap-4">
+        {postimages.map((image, index) => (
+          <div key={index}>
+            <a href={image.path} style="text-decoration: none;">
+              <img src={image.path} alt="" style="max-width: 100%; height: auto;" />
+            </a>
+          </div>
+        ))}
+      </div>
+    </section>
+  </div>
 </Layout>
