@@ -1,4 +1,3 @@
-// Import-Anweisungen für benötigte Module
 import axios from 'axios';
 
 type Postimage = {
@@ -7,41 +6,51 @@ type Postimage = {
 
 const postimages: Postimage[] = [];
 
-// Funktion zum Abrufen der Bild-URLs mit Suchtags
 async function getImgUrls(tags: string, totalPages: number): Promise<string[]> {
   try {
-    // Array zum Speichern aller Bild-URLs über mehrere Seiten
+    // Array to store all image URLs across pages
     const allImgUrls: string[] = [];
 
-    // Schleife durch mehrere Seiten
+    // Loop through multiple pages
     for (let page = 1; page <= totalPages; page++) {
       const response = await axios.get(`https://danbooru.donmai.us/posts.json?tags=${tags}&page=${page}`);
       const posts = response.data;
 
-      // Array zum Speichern von Bild-URLs auf der aktuellen Seite
+      // Array to store image URLs on the current page
       const imgUrls: string[] = [];
       
-      // Extrahiere Bild-URLs aus der JSON-Antwort
+      // Extract image URLs from the JSON response
       posts.forEach((post: any) => {
         const imgUrl = post.large_file_url;
         if (imgUrl) {
           imgUrls.push(imgUrl);
 
-          // Erstelle ein Postimage-Objekt und füge es zum postimages-Array hinzu
+          // Create a Postimage object and push it to the postimages array
           postimages.push({ path: imgUrl });
         }
       });
 
-      // Füge imgUrls zu allImgUrls hinzu
+      // Concatenate imgUrls to allImgUrls
       allImgUrls.push(...imgUrls);
     }
 
     return allImgUrls;
   } catch (error) {
-    console.error('Fehler:', error.message);
+    console.error('Error:', error.message);
     return [];
   }
 }
 
-// Exportiere die Funktionen und Daten, die du verwenden möchtest
-export { postimages, getImgUrls };
+let specifiedTags = 'ganyu+swimsuit';
+const totalPages = 10000000000000000000000000000000000000; // Replace with the number of pages you want to scrape
+
+getImgUrls(specifiedTags, totalPages)
+  .then((imgUrls) => {
+    console.log('Image URLs:', imgUrls);
+    console.log('Postimages array:', postimages);
+  })
+  .catch((error) => {
+    console.error('Error:', error.message);
+  });
+
+export default postimages;
