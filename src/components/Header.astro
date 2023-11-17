@@ -1,6 +1,5 @@
 ---
 import SiteLinks from "@/components/SiteLinks.astro";
-import presentation from "@/data/presentation";
 import removeTrailingSlash from "@/utils/removeTrailingSlash";
 import { ThemeSwitch } from "astro-color-scheme";
 
@@ -21,7 +20,7 @@ const pathname = removeTrailingSlash(Astro.url.pathname);
         <option value="winter">Winter</option>
         <option value="wireframe">Wireframe</option>
       </select>
-    </ThemeSwitch>
+    </ThemeSwitch >
   </label>        
   
 

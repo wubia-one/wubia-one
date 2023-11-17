@@ -1,11 +1,10 @@
 ---
-import { getCollection } from "astro:content";
-import { Image } from "astro:assets"
+import { Image } from "astro:assets";
 
-import Layout from "@/layouts/Layout.astro";
+import SocialLinks from "@/components/SocialLinks.astro";
 import TimeLineElement from "@/components/cv/TimeLine.astro";
 import presentation from "@/data/presentation";
-import SocialLinks from "@/components/SocialLinks.astro";
+import Layout from "@/layouts/Layout.astro";
 import convertAsteriskToStrongTag from "@/utils/convertAsteriskToStrongTag";
 ---
 
@@ -70,18 +69,18 @@ import convertAsteriskToStrongTag from "@/utils/convertAsteriskToStrongTag";
   <div class="time-line-container grid gap-4 mb-10">
     <TimeLineElement
       title="Ausbildung zum IT-Assistent mit Fachabitur"
-      subtitle="2021 - dato an Oberstufenzentrum Informations- & Medizintechnick, Berlin, Deutschland"      
+      subtitle="2021 - dato at Oberstufenzentrum Informations- & Medizintechnick, Berlin, Germany"      
     />
     <TimeLineElement
-    title="IBA"
-    subtitle="2020 - 2021 an Hanz-Litten Schule "
+    title="Integrierte Berufsausbildungsvorbereitung"
+    subtitle="2020 - 2021 at Hanz-Litten Oberstufenzentrum"
     />
     <TimeLineElement
-      title="CTA an Lise Meinter OSZ"
-      subtitle="20019 - 2020"
+      title="Chemisch Technische Assistent"
+      subtitle="2019 - 2020  at Lise Meinter Oberstufenzentrum"
     />
     <TimeLineElement
-      title="Grundschule + Skundarstufe I mit dem Abschluss MSA"
+      title="Primary school + High school with completed MSA diploma  "
       subtitle="2009 - 2019"
     />
     
@@ -91,23 +90,7 @@ import convertAsteriskToStrongTag from "@/utils/convertAsteriskToStrongTag";
   </div>
 
   <div class="time-line-container mb-10">
-    <TimeLineElement
-      title="Praktikant"
-      subtitle="Von 02/2020 bis 02/2020 bei Akademie der Künste, Berlin, Deutschland"
-    >
-      Syntesizer entwiklung und Mastering
-    </TimeLineElement>
-    <TimeLineElement
-    title="Praktikant"
-    subtitle="Von 01/2019 bis 01/2019 bei Tosa Security & Service, Trebin, Deutschland"
-  >
-   Bürotätigkeiten
-  </TimeLineElement>
-    <TimeLineElement
-    title="Praktikant"
-    subtitle="Von 03/2018 bis 03/2018 bei Pfenigpfefer, Berlin, Deutschland"
-  > 
-    Regale ein und aus gereumt
+    
   </TimeLineElement>
   </div>
 
@@ -144,12 +127,9 @@ import convertAsteriskToStrongTag from "@/utils/convertAsteriskToStrongTag";
   <ul class="list-disc  columns-2 mx-6  ">
     <li>Java</li>
     <li>Git</li>
-    <li>Visual Studio Code</li>
     <li>Linux</li>
-    <li>Windows</li>
     <li>Microsoft Teams</li>
     <li>MySQL</li>
-    <li>MySQL Comunity Server</li>
   </ul>
 </div>
  

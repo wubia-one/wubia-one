@@ -1,4 +1,3 @@
-import portrait from "public/portrait.webp"
 
 
 type Social = {
@@ -22,16 +21,12 @@ const presentation: Presentation = {
     "I am a Web Devloper who is currently based in Germany, Berlin, and I am currently absolving a 3 year apprenticeship",
   socials: [
     {
-      label: "X",
-      link: "https://twitter.com/wubia-one/",
-    },
-    {
       label: "Github",
       link: "https://github.com/wubia-one",
     },
     {
-      label: "Discord",
-      link: "https://discord.gg/fVjx846VCc",
+      label: "Discord | wubia",
+      link: "",
     },
   ],
 };
