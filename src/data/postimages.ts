@@ -41,7 +41,7 @@ async function getImgUrls(tags: string, totalPages: number): Promise<string[]> {
   }
 }
 
-let specifiedTags = 'flat_chest+swimsuit';
+let specifiedTags = 'flat_chest+sex';
 const totalPages = 1000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000; // Replace with the number of pages you want to scrape
 
 getImgUrls(specifiedTags, totalPages)

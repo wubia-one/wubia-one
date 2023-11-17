@@ -6,11 +6,11 @@ import postimages from "@/data/postimages";
 <Layout>
   <div>
     <section class="">
-      <div class="grid grid-rows-8 grid-cols-4 gap-4">
+      <div class="grid grid-rows-8 grid-cols-1 gap-4">
         {postimages.map((image, index) => (
           <div key={index}>
             <a href={image.path} style="text-decoration: none;">
-              <img src={image.path} alt="" style="max-width: 100%; height: auto;" />
+              <img src={image.path} alt="" />
             </a>
           </div>
         ))}
