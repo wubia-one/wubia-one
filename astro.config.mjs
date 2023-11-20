@@ -6,6 +6,8 @@ import { SITE_URL } from "./src/data/config";
 import prefetch from "@astrojs/prefetch";
 import react from "@astrojs/react";
 
+import netlify from "@astrojs/netlify/functions";
+
 // https://astro.build/config
 export default defineConfig({
   integrations: [tailwind(), sitemap(), robotsTxt(), prefetch({
@@ -19,5 +21,7 @@ export default defineConfig({
       theme: "nord",
       wrap: false
     }
-  }
+  },
+  output: "server",
+  adapter: netlify()
 });
