@@ -7,14 +7,14 @@ module.exports = {
     extend: {
       fontFamily: {
         'CaskaydiaCove-NFM': [
-          '/wubia-one/CaskaydiaCoveNerdFontMono-Regular.ttf', ...defaultTheme.fontFamily.mono,
+          '/CaskaydiaCoveNerdFontMono-Regular.ttf', ...defaultTheme.fontFamily.mono,
         ],
         'CaskaydiaCove-NF': [
-  '/wubia-one/CaskaydiaCoveNerdFont-Regular.ttf',
+  '/CaskaydiaCoveNerdFont-Regular.ttf',
   ...defaultTheme.fontFamily.serif,
 ],
 'CaskaydiaCove-NFP': [
-  '/wubia-one/CaskaydiaCoveNerdFontPropo-Regular.ttf',
+  '/CaskaydiaCoveNerdFontPropo-Regular.ttf',
   ...defaultTheme.fontFamily.sans,
 ],
       },

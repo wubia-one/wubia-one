@@ -5,7 +5,7 @@ const pathname = removeTrailingSlash(Astro.url.pathname);
 <ul role="list" class="flex flex-row gap-2"></ul>
   <div class="text-center">
     <a class="border-l pl-2 "
-      href="/wubia-one/"
+      href="/"
       class:list={{
         ["hover:text-neutral-100"]: true,
         ["text-neutral-100"]: pathname === "/",
@@ -14,7 +14,7 @@ const pathname = removeTrailingSlash(Astro.url.pathname);
   </div>
   <div class="text-center">
     <a class="border-l  pl-2"
-      href="/wubia-one/posts"
+      href="/posts"
       class:list={{
         ["hover:text-neutral-100"]: true,
         ["text-neutral-100"]: pathname === "/posts",
@@ -24,7 +24,7 @@ const pathname = removeTrailingSlash(Astro.url.pathname);
  
     <div class="text-center">
     <a  class="border-l pl-2 "
-      href="/wubia-one/cv"
+      href="/cv"
       class:list={{
         ["hover:text-neutral-100"]: true,
         ["text-neutral-100"]: pathname === "/cv",

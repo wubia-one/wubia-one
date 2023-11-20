@@ -1,1 +1,1 @@
-export const SITE_URL = "https://wubia-one.github.io/wubia-one";
+export const SITE_URL = "https://wubia.netlify.app";
