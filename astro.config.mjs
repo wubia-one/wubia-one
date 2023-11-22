@@ -6,7 +6,7 @@ import { SITE_URL } from "./src/data/config";
 import prefetch from "@astrojs/prefetch";
 import react from "@astrojs/react";
 
-import netlify from "@astrojs/netlify/functions";
+//import netlify from "@astrojs/netlify/functions";
 import netlify from '@astrojs/netlify/edge-functions';
 
 // https://astro.build/config
