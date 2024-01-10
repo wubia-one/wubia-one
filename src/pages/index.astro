@@ -53,32 +53,7 @@ const posts = (await getCollection("posts")).sort(function (first, second) {
       </div>
     </article>
 
-    <article class="flex flex-col gap-8">
-      <header class="flex w-full flex-row justify-between gap-2">
-        <h3 class="text-lg base-content">Latest posts</h3>
-        <Link href="/posts" label="See all posts" isUnderline target="_self" />
-      </header>
-      {posts.length === 0 && <p>Soon, stay connected 👀...</p>}
-
-      <section class="flex flex-col gap-4 md:flex-row md:flex-wrap">
-        {
-          posts.length !== 0 &&
-            posts
-              .slice(0, 2)
-              .map((post) => (
-                <PostCard
-                  publishedAt={post.data.publishedAt}
-                  title={post.data.title}
-                  description={post.data.description}
-                  slug={post.slug}
-                />
-              ))
-        }
-       
-
-      </section>
-      <hr>
-    </article>
+    
     <img src="https://files.yande.re/image/11f3afdd9238dbc1f360711a0a3d1ebf/yande.re%201132292%20bodysuit%20bondage%20ganyu%20garter%20genshin_impact%20horns%20leotard%20pee%20roundschen%20torn_clothes%20vibrator.jpg" alt="">
     <article class="flex flex-col gap-8">
       <header class="flex w-full flex-row justify-between gap-2">
