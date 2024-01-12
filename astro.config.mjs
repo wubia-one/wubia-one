@@ -10,7 +10,10 @@ import netlify from "@astrojs/netlify/functions";
 
 export default defineConfig({
   output: 'server',
-  adapter: cloudflare(),
+  adapter: cloudflare({
+    mode: 'directory',
+    functionPerRoute: true
+  }),
   // ...
   integrations: [tailwind()],
 });
